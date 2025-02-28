@@ -1,0 +1,353 @@
+/* 000000 - black
+FFFFFF - white
+F8F5E9 - main
+0177B4 - linkedin blue
+1E1E1E - black
+F44336 - red */
+body
+{
+    font-family: "Comfortaa", serif;
+}
+.heading
+{
+    width: fit-content;
+    margin: 0px;
+    text-decoration: underline;
+}
+.navbar
+{
+    background:#F8F5E9;
+}
+p
+{
+    margin: 0px;
+}
+
+#HeroSection
+{
+    width: 100 %;
+    height:85vh;
+    background: #F8F5E9;
+    border-bottom-left-radius:35px;
+    border-bottom-right-radius:35px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.HeroSectionContent
+{
+    width :fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myImage
+{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border: 5px white solid;
+}
+
+.HeroSectionContent p
+{
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.focus
+{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.heroButtons
+{
+    background:black;
+    color:white;
+    padding:3px 15px;
+}
+
+/* About me Section */
+
+#Aboutmesection
+{
+    
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+
+.aboutp1,.aboutp2
+{
+    width: 47%;
+
+}
+
+.aboutp1
+{
+    text-align: center;
+}
+
+.aboutp1 img
+{
+    border-radius: 10px;
+}
+
+
+/* Skills Section */
+
+#SkillsSection
+{
+    
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skillsDiv
+{
+    box-shadow: 4px 4px 5px rgba(0,0,0,0.25);
+    border-radius: 10px;
+    display: flex;
+    min-height: 100px;
+
+}
+
+.skillsDiv .p1
+{
+    width: 30%;
+    background: #F8F5E9;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.skillsDiv .p2
+{
+    width: 25%;
+    font-size: 15px;
+}
+
+.SkillsList
+{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+/* project section */
+#projectssection
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project
+{
+    width: 85%;
+    display: flex;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+    border-radius: 15px;
+}
+.project .p1
+{
+    width: 50%;
+    text-align: center;
+}
+.project .p1 img
+{
+    border-radius: 10px;
+}
+.project .p2
+{
+    width: 50%;
+}
+
+.GitHubbutton
+{
+    background: black;
+    color: #F8F5E9;
+    padding: 2px 12px ;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* contact section */
+
+#contactsection
+{
+    
+    width: 85%;
+    margin: auto;
+    min-height: 300px;
+    border-radius: 15px;
+    background: #F8F5E9;
+    padding: 10px;
+}
+
+.contactDivone
+{
+    background:#F44336 ;
+    width: 56%;
+    color: #F8F5E9;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.contactDivtwo
+{
+    background:#0177B4 ;
+    width: 56%;
+    color: #F8F5E9;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.contactDivthree
+{
+    margin-top: 10px;
+    background:#0177B4 ;
+    width: 50%;
+    color: #F8F5E9;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.contactDivtwo:hover,.contactDivone:hover
+{
+    cursor: pointer;
+}
+
+.contactbuttons
+{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* footer section */
+
+footer
+{
+    background: black;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    margin-top: 75px;
+
+}
+
+/*mobile version */
+
+@media only screen and (max-width: 768px)
+{
+    .navbar
+    {
+        width: 100%;
+    }
+    #Aboutmesection
+    {
+        flex-direction: column;
+    }
+    .aboutp1,.aboutp2
+    {
+        width: 100%;
+
+    }
+
+    .aboutp1
+    {
+        text-align: center;
+    }
+
+    .aboutp1 img
+    {
+        border-radius: 10px;
+    }
+    .aboutp2
+    {
+        padding: 10px;
+        margin-top: 15px;
+        text-align: left;
+    }
+    .skillsDiv
+    {
+        flex-direction: column;
+    }
+    .skillsDiv .p1
+    {
+        width: 100%;
+        background: #F8F5E9;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .skillsDiv .p2
+    {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .SkillsList
+    {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 5px;
+    }
+    .project
+    {
+        flex-direction: column;
+    }
+    .project .p1
+    {
+        width: 100%;
+    }
+    .project .p2
+    {
+        width: 100%;
+    }
+    .contactbuttons
+    {
+        flex-direction: column;
+    }
+    .contactDivone
+    {
+        
+        width: 100%;
+        
+    }
+    .contactDivtwo
+    {
+        
+        width: 100%;
+        
+    }
+    .contactDivthree
+    {
+        
+        width: 100%;
+    }
+
+
+}
